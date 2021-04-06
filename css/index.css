@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins';
+  color: #002A4B;
+}
+
+.bg-boston {
+  background-color: #0368B6;
+}
+
+.bg-oscuro {
+  background-color: #002A4B
+}
+
+.bg-claro {
+  background-color: #A9CAEA;
+}
+
+.bg-blanco {
+  background-color: #E1E9F0;
+}
+
+.text-azul {
+  color: #0368B6;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+#home-carrusel {
+  filter: brightness(.9);
+  margin-bottom: 0;
+}
+
+.home-img {
+  max-height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  opacity: 1;
+  color: white;
+}
+
+.slick-prev {
+  left: 28px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 45px;
+}
+
+#home-carrusel div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 70, 160, .25);
+  mix-blend-mode: overlay;
+}
+
+.caption {
+  max-width: 800px;
+  font-family: 'Poppins';
+  line-height: 1.6;
+  color: white;
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+  font-size: 2.5rem;
+}
+
+/* nosotros */
+
+.titulo-nosotros {
+  padding-top: 70px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-end-end-radius: 50px;
+  width: 50vw;
+  margin-bottom: 10vh;
+}
+
+.img-nosotros {
+  margin-top: 3vh;
+  padding-left: 10vw;
+  max-width: 480px;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.contenedor-nosotros {
+  padding: 0 50px 50px 0px;
+  border-end-end-radius: 50px;
+}
+
+/* servicios */
+
+.contenedor-servicios {
+  padding: 15px;
+  border-radius: 40px;
+  width: 93%;
+}
+
+.titulo-nosotros h2,
+.titulo-servicios h2,
+.titulo-alianzas h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0368B6;
+}
+
+#servicios .card {
+  padding: 0 12px;
+  border: 0;
+  max-width: 360px;
+}
+
+#servicios .card-img-top {
+  max-height: 180px;
+  object-fit: cover;
+}
+
+#servicios .card-title {
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 5px 20px 5px;
+}
+
+#servicios .card-text {
+  border-radius: 15px;
+  margin: 13px;
+}
+
+.item-servicios {
+  font-size: .7rem;
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+.item-servicios span {
+  font-size: .85rem;
+  margin-left: -5px;
+}
+
+.cuadrados-servicios {
+  padding: 15px;
+  position: relative;
+}
+
+.cuadrados-servicios:before {
+  content: "";
+  width: 80px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: rgba(169, 202, 234, .5);
+  position: absolute;
+  top: -20px;
+  left: -25px;
+}
+
+/* alianzas */
+#alianzas .slick-prev,
+#alianzas .slick-next {
+  top: 40%;
+}
+
+#alianzas .fas {
+  display: initial;
+}
+
+#alianzas .slick-prev::before,
+#alianzas .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+}
+
+#alianzas .slick-prev::before {
+  content: "\f053";
+}
+
+#alianzas .slick-next::before {
+  content: "\f054";
+}
+
+.fa-chevron-left {
+  font-size: 30px;
+  color: #002A4B;
+}
+
+.fa-chevron-right {
+  font-size: 30px;
+  color: #002A4B;
+}
