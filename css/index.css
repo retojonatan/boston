@@ -116,6 +116,7 @@
 
 .titulo-nosotros h2,
 .titulo-servicios h2,
+.titulo-clientes h2,
 .titulo-alianzas h2 {
   font-size: 3rem;
   font-weight: 600;
@@ -203,4 +204,114 @@
 .fa-chevron-right {
   font-size: 30px;
   color: #002A4B;
+}
+
+/* clientes */
+
+.contenedor-clientes {
+  padding: 0 150px;
+}
+
+#clientes-carrusel .slick-dots li button:before {
+  opacity: 1;
+  color: transparent;
+  background-color: transparent;
+  border: 1px solid #002A4B;
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+
+#clientes-carrusel li.slick-active button:before {
+  background-color: #002A4B;
+}
+
+#clientes-carrusel .slick-dots {
+  bottom: -30px;
+}
+
+.img-clientes {
+  margin: 5px 0;
+  padding: 10px;
+  max-height: 110px;
+  object-fit: scale-down;
+}
+
+/* testimonios */
+
+.contenedor-testimonios {
+  padding: 100px;
+  background: linear-gradient(to bottom, #FFF 0%, #FFF 78%, #fff 78%, #002A4B 78%, #002A4B 100%);
+}
+
+.cuadrados-testimonios {
+  margin-top: 50px;
+  border-radius: 50px;
+  padding: 50px;
+  height: 450px;
+}
+
+.img-testimonios {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -100px;
+  -webkit-box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.5);
+  object-fit: scale-down;
+}
+
+#testimonios-carrusel .slick {
+  width: 800px;
+  margin: auto;
+  background-color: #EBEBEB;
+  height: 480px;
+}
+
+#testimonios-carrusel .slick-track {
+  padding-top: 50px;
+}
+
+#testimonios-carrusel .slick-slide:not(.slick-center) {
+  z-index: 0;
+  transform: scale(0.95);
+  opacity: .6;
+  left: 175px;
+  top: -50px;
+  transform: translate(0px, -50px);
+}
+
+#testimonios-carrusel .slick-active.slick-center+.slick-slide+.slick-slide {
+  z-index: 1;
+}
+
+#testimonios-carrusel .slick-active.slick-center+.slick-slide,
+#testimonios-carrusel .slick-center+.slick-cloned {
+  z-index: 2;
+  left: -175px;
+  top: -50px;
+}
+
+#testimonios-carrusel .slick-center {
+  z-index: 3;
+}
+
+#testimonios-carrusel .slick-slide {
+  position: relative;
+  transition: transform 400ms linear;
+}
+
+#testimonios-carrusel .slide .cuadrados-testimonios {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+#testimonios-carrusel .slick-prev {
+  left: -5% !important;
+}
+
+#testimonios-carrusel .slick-next {
+  right: -5% !important;
 }
