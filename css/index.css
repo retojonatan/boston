@@ -117,6 +117,8 @@
 .titulo-nosotros h2,
 .titulo-servicios h2,
 .titulo-clientes h2,
+.titulo-casos h2,
+.titulo-contacto h2,
 .titulo-alianzas h2 {
   font-size: 3rem;
   font-weight: 600;
@@ -314,4 +316,65 @@
 
 #testimonios-carrusel .slick-next {
   right: -5% !important;
+}
+
+/* casos de exito */
+
+.titular-exito {
+  border-end-end-radius: 40px;
+  border-start-end-radius: 40px;
+  padding: 0px 20px 0px 80px;
+  min-height: 500px;
+}
+
+.titular-exito h2 {
+  line-height: 1.25;
+}
+
+.icon {
+  height: 70px;
+  margin: 20px 0;
+}
+
+#casos-carrusel .slick-prev::before {
+  content: "\f053";
+}
+
+#casos-carrusel .slick-next::before {
+  content: "\f054";
+}
+
+/* contacto */
+
+#contacto {
+  padding-top: 110px;
+}
+
+.contact-icons img {
+  height: 20px;
+}
+
+#contacto .icon {
+  display: inline;
+}
+
+#contacto .form-control::placeholder {
+  color: #0368B6;
+  font-weight: 300;
+}
+
+#contacto .form-control {
+  box-shadow: 0px 1px 5px #ccc;
+  margin: 10px 0;
+}
+
+#contacto .btn-boston {
+  background-color: #BACCDB;
+  font-weight: 600;
+  font-size: .8rem;
+  padding: 5px 20px;
+}
+
+#contacto .btn-boston:hover {
+  background-color: #A9CAEA;
 }
