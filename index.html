@@ -24,10 +24,10 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-boston">
+  <nav class="navbar navbar-expand-lg navbar-light bg-boston" id="nav-boston">
     <div class="container-fluid mx-5">
-      <a class="navbar-brand" href="#">
-        <img src="/img/logo.png" width="200" class="d-inline-block align-text-top" alt="">
+      <a class="navbar-brand" href="#nav-boston">
+        <img src="/img/logo.png" width="200" class="d-inline-block align-text-top" alt="logo BLC">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -592,31 +592,34 @@
   </section>
 
   <section id="contacto" class="bg-oscuro">
-    <div class="row bg-blanco p-5">
-      <div class="col-sm-6 col-12 px-5">
+    <div class="row bg-blanco pt-5 mx-0" style="padding-bottom: 150px;">
+      <div class="offset-1 col-sm-5 col-12">
         <div class="text-azul titulo-contacto pb-4">
           <h2>Contacto</h2>
         </div>
         <form id="form-contacto">
           <div class="form-group">
-            <input type="text" id="nombreFormulario" class="form-control bg-claro" placeholder="Nombre" name="Nombre">
+            <input type="text" id="nombreFormulario" class="form-control form-control-sm bg-claro" placeholder="Nombre"
+              name="Nombre">
           </div>
           <div class="form-group">
-            <input type="text" id="emailFormulario" class="form-control bg-claro" placeholder="Email" name="Email">
+            <input type="text" id="emailFormulario" class="form-control form-control-sm bg-claro" placeholder="Email"
+              name="Email">
           </div>
           <div class="form-group">
-            <input type="text" id="asuntoFormulario" class="form-control bg-claro" placeholder="Asunto" name="Asunto">
+            <input type="text" id="asuntoFormulario" class="form-control form-control-sm bg-claro" placeholder="Asunto"
+              name="Asunto">
           </div>
           <div class="form-group">
-            <textarea id="mensajeFormulario" cols="30" rows="7" class="form-control bg-claro" placeholder="Mensaje"
-              name="Mensaje"></textarea>
+            <textarea id="mensajeFormulario" cols="30" rows="7" class="form-control form-control-sm bg-claro"
+              placeholder="Mensaje" name="Mensaje"></textarea>
           </div>
           <div class="form-group">
             <input onclick="enviarMensaje()" type="button" class="btn btn-sm btn-boston" value="Enviar">
           </div>
         </form>
       </div>
-      <div class="col-sm-6 col-12 align-self-center mx-auto">
+      <div class="offset-1 col-sm-5 col-12 align-self-center">
         <h5 class="text-azul">Información de contacto</h5>
         <div class="mt-4">
           <div class="contact-icons d-inline">
@@ -646,7 +649,21 @@
     </div>
   </section>
 
-  <div class="mt-5 py-5 bg-danger"></div>
+  <section id="mapa" class="bg-oscuro">
+    <div class="titulo-mapa">
+      <h2 class="text-white">Ubicación</h2>
+    </div>
+    <article id="mapa-google">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5086693299063!2d-58.39254728422905!3d-34.59129676434911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabcea9ae8e7%3A0x412a8ff4c922afed!2sVicente%20L%C3%B3pez%201747%2C%20C1018%20ABC%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2suy!4v1617824648021!5m2!1ses-419!2suy"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </article>
+    <div class="text-end">
+      <a href="#nav-boston">
+        <img src="/img/logo.png" class="logo" alt="logo BLC">
+      </a>
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">

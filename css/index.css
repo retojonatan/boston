@@ -119,6 +119,7 @@
 .titulo-clientes h2,
 .titulo-casos h2,
 .titulo-contacto h2,
+.titulo-mapa h2,
 .titulo-alianzas h2 {
   font-size: 3rem;
   font-weight: 600;
@@ -348,10 +349,14 @@
 
 #contacto {
   padding-top: 110px;
+  margin-bottom: -50px;
 }
 
 .contact-icons img {
   height: 20px;
+  margin: 0 5px;
+  width: 40px;
+  object-fit: scale-down;
 }
 
 #contacto .icon {
@@ -377,4 +382,24 @@
 
 #contacto .btn-boston:hover {
   background-color: #A9CAEA;
+}
+
+.contact-text a,
+.contact-text h5 {
+  font-size: .9rem;
+}
+
+/* mapa */
+
+#mapa {
+  position: relative;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 30px 100px;
+}
+
+#mapa .logo {
+  padding: 30px;
+  height: 120px;
+  object-fit: scale-down;
 }
