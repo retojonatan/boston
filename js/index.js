@@ -59,18 +59,11 @@ $('#testimonios-carrusel').slick({
   prevArrow: '<div class="slick-prev slick-arrow"><i class=" fas fa-chevron-left"></i></div>',
   nextArrow: '<div class="slick-next slick-arrow"><i class=" fas fa-chevron-right"></i></div>',
   responsive: [{
-      breakpoint: 1600,
-      settings: {
-        centerPadding: '200px',
-      },
+    breakpoint: 1600,
+    settings: {
+      centerPadding: '165px',
     },
-    {
-      breakpoint: 768,
-      settings: {
-
-      }
-    }
-  ]
+  }]
 });
 
 $('#casos-carrusel').slick({

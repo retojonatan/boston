@@ -5,6 +5,10 @@
   color: #002A4B;
 }
 
+p {
+  font-size: 1.05rem;
+}
+
 .bg-boston {
   background-color: #0368B6;
 }
@@ -15,6 +19,10 @@
 
 .bg-claro {
   background-color: #A9CAEA;
+}
+
+.bg-cuadro {
+  background-color: #EDF2F6;
 }
 
 .bg-blanco {
@@ -69,16 +77,15 @@
 }
 
 #home-carrusel .blend-mix:after {
-  filter: brightness(.9);
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(20, 100, 150, 0.3);
-  mix-blend-mode: hard-light;
-  filter: drop-shadow(4px 1px 4px darkblue);
+  background: rgba(0, 50, 40, 0.25);
+  mix-blend-mode: normal;
+  filter: drop-shadow(1px 1px 2px rgb(0, 20, 130));
 }
 
 .caption {
@@ -89,7 +96,7 @@
   position: absolute;
   top: 40vh;
   left: 10vw;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
 }
 
 /* nosotros */
@@ -98,31 +105,31 @@
   padding-top: 70px;
   padding-right: 50px;
   padding-bottom: 10px;
-  border-end-end-radius: 50px;
-  width: 50vw;
-  margin-bottom: 10vh;
+  border-end-end-radius: 70px;
+  width: 55vw;
+  margin-bottom: 6vh;
 }
 
 .img-nosotros {
   margin-top: 3vh;
   padding-left: 10vw;
-  max-width: 480px;
-  min-height: 300px;
+  max-width: 500px;
+  min-height: 320px;
   object-fit: cover;
 }
 
 .contenedor-nosotros {
   padding: 0 50px 50px 0px;
-  border-end-end-radius: 50px;
+  border-end-end-radius: 100px;
 }
 
 /* servicios */
 
 .contenedor-servicios,
 .contenedor-alianzas {
-  padding: 15px;
+  padding: 20px;
   border-radius: 40px;
-  width: 93%;
+  width: 94%;
 }
 
 .titulo-nosotros h2,
@@ -132,13 +139,13 @@
 .titulo-contacto h2,
 .titulo-mapa h2,
 .titulo-alianzas h2 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: #0368B6;
 }
 
 #servicios .card {
-  padding: 0 12px;
+  padding: 0 14px;
   border: 0;
   max-width: 360px;
 }
@@ -177,7 +184,9 @@
   font-size: 1.25rem;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 5px 20px 5px;
+  padding: 0 5px 15px 5px;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 #servicios .card-text {
@@ -189,6 +198,7 @@
   font-size: .7rem;
   list-style-position: inside;
   list-style-type: square;
+  font-weight: 500;
 }
 
 .item-servicios span {
@@ -205,7 +215,7 @@
   content: "";
   width: 80px;
   height: 70px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: rgba(169, 202, 234, .5);
   position: absolute;
   top: -20px;
@@ -283,7 +293,7 @@
 /* testimonios */
 
 .contenedor-testimonios {
-  padding: 100px;
+  padding: 100px 125px;
   background: linear-gradient(to bottom, #FFF 0%, #FFF 78%, #fff 78%, #002A4B 78%, #002A4B 100%);
 }
 
@@ -318,9 +328,9 @@
 #testimonios-carrusel .slick-slide:not(.slick-center) {
   z-index: 0;
   transform: scale(0.95);
-  opacity: .6;
-  left: 175px;
-  top: -50px;
+  opacity: .5;
+  left: 225px;
+  top: -40px;
   transform: translate(0px, -50px);
 }
 
@@ -331,8 +341,8 @@
 #testimonios-carrusel .slick-active.slick-center+.slick-slide,
 #testimonios-carrusel .slick-center+.slick-cloned {
   z-index: 2;
-  left: -175px;
-  top: -50px;
+  left: -225px;
+  top: -40px;
 }
 
 #testimonios-carrusel .slick-center {
