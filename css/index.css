@@ -322,7 +322,7 @@ p {
 }
 
 #testimonios-carrusel .slick-track {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 #testimonios-carrusel .slick-slide:not(.slick-center) {
@@ -415,13 +415,16 @@ p {
 }
 
 #contacto .form-control::placeholder {
-  color: #0368B6;
+  color: #689BC2;
   font-weight: 300;
 }
 
 #contacto .form-control {
-  box-shadow: 0px 1px 5px #ccc;
-  margin: 10px 0;
+  background-color: #9CC1DE;
+  box-shadow: 0px 1px 3px #ddd;
+  margin: 18px 0;
+  padding: 5px 20px;
+  border-radius: 6px;
 }
 
 #contacto .btn-boston {
@@ -440,7 +443,7 @@ p {
 .contact-text a,
 .contact-text h5 {
   color: #0368B6;
-  font-size: .9rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
