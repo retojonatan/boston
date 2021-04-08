@@ -108,7 +108,8 @@
 
 /* servicios */
 
-.contenedor-servicios {
+.contenedor-servicios,
+.contenedor-alianzas {
   padding: 15px;
   border-radius: 40px;
   width: 93%;
@@ -193,10 +194,12 @@
 
 #alianzas .slick-prev::before {
   content: "\f053";
+  font-size: 0;
 }
 
 #alianzas .slick-next::before {
   content: "\f054";
+  font-size: 0;
 }
 
 .fa-chevron-left {
@@ -339,10 +342,12 @@
 
 #casos-carrusel .slick-prev::before {
   content: "\f053";
+  font-size: 0;
 }
 
 #casos-carrusel .slick-next::before {
   content: "\f054";
+  font-size: 0;
 }
 
 /* contacto */
@@ -378,6 +383,7 @@
   font-weight: 600;
   font-size: .8rem;
   padding: 5px 20px;
+  box-shadow: 0px 1px 5px #ccc;
 }
 
 #contacto .btn-boston:hover {
@@ -386,7 +392,9 @@
 
 .contact-text a,
 .contact-text h5 {
+  color: #0368B6;
   font-size: .9rem;
+  text-decoration: none;
 }
 
 /* mapa */
@@ -402,4 +410,273 @@
   padding: 30px;
   height: 120px;
   object-fit: scale-down;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: .85rem;
+  }
+
+  #nav-boston {
+    padding-bottom: 0;
+  }
+
+  #nav-boston .container-fluid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+  }
+
+
+  #nav-boston .navbar-nav {
+    text-align: right;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 0 !important;
+    margin-left: 80px !important;
+    background-color: white;
+    box-shadow: 0 3px 4px #bbb;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+
+  }
+
+  #nav-boston .navbar-toggler {
+    border-color: transparent;
+  }
+
+  .nav-link {
+    color: #002A4B !important;
+  }
+
+  .titulo-nosotros {
+    width: 90%;
+    padding-top: 30px;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .titulo-nosotros h2,
+  .titulo-servicios h2,
+  .titulo-clientes h2,
+  .titulo-casos h2,
+  .titulo-contacto h2,
+  .titulo-mapa h2,
+  .titulo-alianzas h2 {
+    font-size: 2.25rem;
+  }
+
+  .img-nosotros {
+    margin-top: 0;
+    min-height: 200px;
+    max-width: inherit;
+    padding-left: 0;
+  }
+
+  .contenedor-nosotros {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contenedor-nosotros .col-12 {
+    padding: 30px;
+  }
+
+  .offset-1 {
+    margin-left: 0;
+  }
+
+  #servicios {
+    background-color: white;
+    padding-top: 1.8rem !important;
+  }
+
+  .contenedor-servicios {
+    width: 100%;
+  }
+
+  .contenedor-alianzas {
+    width: 100%;
+    border-radius: 0;
+    padding: 20px 0;
+  }
+
+  #alianzas .w-50 {
+    width: 75% !important;
+  }
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 20px;
+  }
+
+  #alianzas .slick-prev {
+    left: 10px;
+  }
+
+  #alianzas .slick-next {
+    right: 10px;
+  }
+
+  .logo-alianza {
+    width: 75%;
+  }
+
+  #nuestros-clientes {
+    background-color: white;
+    padding: 25px !important;
+  }
+
+  .contenedor-clientes {
+    padding: 0;
+  }
+
+  .titulo-clientes {
+    padding-bottom: 1rem !important;
+  }
+
+  #clientes-carrusel .slick-dots {
+    display: contents;
+  }
+
+  #clientes-carrusel .slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+  }
+
+  .contenedor-testimonios {
+    padding: 0 !important;
+  }
+
+  .contenedor-testimonios h3 {
+    padding-bottom: 0 !important;
+  }
+
+  #testimonios {
+    margin-bottom: -40px;
+  }
+
+  #testimonios-carrusel * {
+    padding: 0 !important;
+    margin: auto !important;
+  }
+
+  #testimonios-carrusel .slick-slide:not(.slick-center) {
+    z-index: 0;
+    transform: scale(0.95);
+    opacity: .3;
+  }
+
+  .img-testimonios {
+    top: -37px;
+    height: 75px;
+    width: 75px;
+  }
+
+  #testimonios-carrusel .cuadrados-testimonios {
+    padding: 20px 35px !important;
+    margin: 95px 30px !important;
+  }
+
+  #testimonios-carrusel .cuadrados-testimonios p {
+    font-size: .85rem;
+  }
+
+  #testimonios-carrusel .cuadrados-testimonios h5 {
+    font-size: 1rem;
+    padding-top: 40px !important;
+  }
+
+  #testimonios-carrusel .slick-prev {
+    left: 3% !important;
+  }
+
+  #testimonios-carrusel .slick-next {
+    right: 1% !important;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 0;
+  }
+
+  #casos-exito .titular-exito {
+    width: 90%;
+    padding: 10px 20px 10px 30px;
+    min-height: 200px;
+  }
+
+  #casos-exito .row .col-12 {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+
+  #casos-exito .icon {
+    float: left;
+    width: 33.33%;
+    object-fit: scale-down;
+    height: 40px;
+    margin-top: 0;
+  }
+
+  #casos-exito h5,
+  #casos-exito p {
+    float: left;
+    width: 66.66%;
+  }
+
+  #casos-carrusel .slick-prev {
+    left: 20px;
+  }
+
+  #casos-carrusel .slick-next {
+    right: 15px;
+  }
+
+  #contacto {
+    padding-top: 3rem;
+  }
+
+  #contacto .row {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 100px;
+  }
+
+  .titulo-contacto {
+    padding-bottom: 0 !important;
+  }
+
+  #contacto .form-control {
+    min-height: calc(1.5em + 1rem + 4px);
+    padding: .375rem .75rem;
+    font-size: .9rem;
+    border-radius: .7rem;
+  }
+
+  #contacto .btn-boston {
+    font-size: 1rem;
+    border-radius: .675rem;
+    padding: 8px 24px;
+    margin-bottom: 25px;
+  }
+
+  #mapa {
+    padding: 40px;
+  }
+
+  #mapa-google>iframe {
+    height: 300px;
+  }
+
+  #mapa .logo {
+    display: none;
+  }
 }

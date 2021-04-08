@@ -40,7 +40,7 @@ $('#clientes-carrusel').slick({
     breakpoint: 478,
     settings: {
       slidesPerRow: 4,
-      rows: 2,
+      rows: 4,
     }
   }]
 });
@@ -53,23 +53,31 @@ $('#testimonios-carrusel').slick({
   infinite: true,
   autoplayspeed: 3000,
   centerMode: true,
-  centerPadding: '300px',
+  centerPadding: '100px',
   slidesToShow: 1,
   dots: false,
   prevArrow: '<div class="slick-prev slick-arrow"><i class=" fas fa-chevron-left"></i></div>',
   nextArrow: '<div class="slick-next slick-arrow"><i class=" fas fa-chevron-right"></i></div>',
   responsive: [{
-    breakpoint: 1600,
-    settings: {
-      centerPadding: '200px',
+      breakpoint: 1600,
+      settings: {
+        centerPadding: '200px',
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+
+      }
     }
-  }]
+  ]
 });
 
 $('#casos-carrusel').slick({
   arrows: true,
   dots: false,
   autoplay: true,
+  accesibility: true,
   draggable: true,
   fade: true,
   lazyLoad: 'progressive',
