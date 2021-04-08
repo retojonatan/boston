@@ -1,5 +1,5 @@
 $('#home-carrusel').slick({
-  arrows: true,
+  arrows: false,
   dots: true,
   autoplay: true,
   draggable: true,
@@ -86,4 +86,55 @@ $('#casos-carrusel').slick({
   speed: 2000,
   prevArrow: '<div class="slick-prev slick-arrow"><i class=" fas fa-chevron-left"></i></div>',
   nextArrow: '<div class="slick-next slick-arrow"><i class=" fas fa-chevron-right"></i></div>',
-})
+});
+
+
+const animar = el => {
+  let imagen = el.firstElementChild.firstElementChild;
+  let cuadrado = el.lastElementChild.lastElementChild.lastElementChild;
+  imagen.classList.add("zoom");
+  cuadrado.classList.add("achique");
+}
+const salir = el => {
+  let imagen = el.firstElementChild.firstElementChild;
+  let cuadrado = el.lastElementChild.lastElementChild.lastElementChild;
+  imagen.classList.remove("zoom");
+  cuadrado.classList.remove("achique");
+};
+
+/*
+function enviarMensaje() {
+  var nombre = document.getElementById("nombreFormulario").value;
+  var email = document.getElementById("emailFormulario").value;
+  var asunto = document.getElementById("asuntoFormulario").value;
+  var mensaje = document.getElementById("mensajeFormulario").value;
+
+  if (nombre != "" && email != "" && asunto != "" && mensaje != "") {
+    guardarMensaje(nombre, email, asunto, mensaje);
+  }
+}
+
+function guardarMensaje(nombre, email, asunto, mensaje) {
+  var urlCompleta = '';
+
+  var request = $.ajax({
+    url: urlCompleta,
+    type: 'GET',
+    dataType: 'json',
+    data: {
+      nombre: nombre,
+      email: email,
+      asunto: asunto,
+      mensaje: mensaje
+    }
+  })
+  request.done(function (response) {
+    document.getElementById("form-contacto").reset();
+    $('#modalExito').modal('show');
+  })
+  request.fail(function (jqXHR, textStatus) {
+    document.getElementById("form-contacto").reset();
+    $('#modalFail').modal('show');
+  })
+}
+*/

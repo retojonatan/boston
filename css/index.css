@@ -25,18 +25,26 @@
   color: #0368B6;
 }
 
+:focus {
+  outline: none;
+}
+
 .nav-link {
   font-size: 1.2rem;
   margin: 10px;
 }
 
+.nav-link:hover {
+  color: #002A4B !important;
+  text-shadow: 0px 1px 1px #002a4b;
+}
+
 #home-carrusel {
-  filter: brightness(.9);
   margin-bottom: 0;
 }
 
 .home-img {
-  max-height: 90vh;
+  height: 92vh;
   width: 100%;
   object-fit: cover;
 }
@@ -60,15 +68,17 @@
   right: 45px;
 }
 
-#home-carrusel div:after {
+#home-carrusel .blend-mix:after {
+  filter: brightness(.9);
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 70, 160, .25);
-  mix-blend-mode: overlay;
+  background: rgba(20, 100, 150, 0.3);
+  mix-blend-mode: hard-light;
+  filter: drop-shadow(4px 1px 4px darkblue);
 }
 
 .caption {
@@ -133,9 +143,34 @@
   max-width: 360px;
 }
 
+#servicios .card-img-top::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #servicios .card-img-top {
-  max-height: 180px;
+  height: 180px;
   object-fit: cover;
+  transition: .3s linear;
+}
+
+.box {
+  overflow: hidden;
+}
+
+.zoom {
+  transform: scale(1.25);
+  position: relative;
+}
+
+.cuadrados-servicios.achique::before {
+  width: 50px;
+  height: 45px;
 }
 
 #servicios .card-title {
@@ -175,6 +210,7 @@
   position: absolute;
   top: -20px;
   left: -25px;
+  transition: .3s linear;
 }
 
 /* alianzas */
@@ -305,7 +341,7 @@
 
 #testimonios-carrusel .slick-slide {
   position: relative;
-  transition: transform 400ms linear;
+  transition: transform .45s linear;
 }
 
 #testimonios-carrusel .slide .cuadrados-testimonios {
@@ -388,6 +424,7 @@
 
 #contacto .btn-boston:hover {
   background-color: #A9CAEA;
+  color: #0368B6;
 }
 
 .contact-text a,
