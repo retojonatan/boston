@@ -37,6 +37,8 @@ p {
   outline: none;
 }
 
+/* navbar */
+
 .nav-link {
   font-size: 1.2rem;
   margin: 10px;
@@ -46,6 +48,25 @@ p {
   color: #002A4B !important;
   text-shadow: 0px 1px 1px #002a4b;
 }
+
+/* anclajes */
+
+.anclaje {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+#about-us {
+  top: -25px;
+}
+
+#contact {
+  top: -50px;
+}
+
+/* home */
 
 #home-carrusel {
   margin-bottom: 0;
