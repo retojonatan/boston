@@ -217,14 +217,13 @@ p {
 
 .item-servicios {
   font-size: .7rem;
-  list-style-position: inside;
+  margin-left: 12px;
   list-style-type: square;
   font-weight: 500;
 }
 
 .item-servicios span {
   font-size: .85rem;
-  margin-left: -5px;
 }
 
 .cuadrados-servicios {
@@ -491,7 +490,7 @@ p {
   }
 
   #nav-boston {
-    padding-bottom: 0;
+    padding: 5px 20px;
   }
 
   #nav-boston .container-fluid {
@@ -513,10 +512,12 @@ p {
   }
 
   .navbar-collapse {
-    background-color: white;
+    background-color: transparent;
     position: absolute;
     z-index: 1;
-
+    top: 74px;
+    right: 0;
+    width: 85%;
   }
 
   #nav-boston .navbar-toggler {
@@ -527,11 +528,25 @@ p {
     color: #002A4B !important;
   }
 
+  .home-img {
+    height: 90vh;
+  }
+
+  .caption {
+    line-height: 1.4;
+    top: 38vh;
+    font-size: 2.5rem;
+    max-width: 100%;
+    left: 0;
+    padding: 0 35px;
+  }
+
   .titulo-nosotros {
-    width: 90%;
+    width: 70%;
     padding-top: 30px;
-    padding-right: 20px;
+    padding-right: 40px;
     margin-bottom: 0;
+    border-end-end-radius: 50px;
   }
 
   .titulo-nosotros h2,
@@ -560,6 +575,10 @@ p {
     padding: 30px;
   }
 
+  .contenedor-nosotros .ps-0 {
+    padding-left: 30px !important;
+  }
+
   .offset-1 {
     margin-left: 0;
   }
@@ -569,8 +588,31 @@ p {
     padding-top: 1.8rem !important;
   }
 
+  #servicios .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #servicios .card-body {
+    padding: 1rem 0rem;
+  }
+
+  #servicios .card-text {
+    padding: 0 10px;
+    margin: 0 0 0 20px;
+  }
+
+  .cuadrados-servicios {
+    padding: 15px 0 15px 15px;
+  }
+
+  .cuadrados-servicios:before {
+    left: -40px;
+  }
+
   .contenedor-servicios {
     width: 100%;
+    padding: 15px;
   }
 
   .contenedor-alianzas {
@@ -681,7 +723,7 @@ p {
   #casos-exito .titular-exito {
     width: 90%;
     padding: 10px 20px 10px 30px;
-    min-height: 200px;
+    min-height: 150px;
   }
 
   #casos-exito .row .col-12 {
@@ -689,11 +731,16 @@ p {
     padding-left: 2rem !important;
   }
 
+  #casos-exito .row .py-5 {
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+  }
+
   #casos-exito .icon {
     float: left;
     width: 33.33%;
     object-fit: scale-down;
-    height: 40px;
+    height: 45px;
     margin-top: 0;
   }
 
@@ -701,6 +748,11 @@ p {
   #casos-exito p {
     float: left;
     width: 66.66%;
+  }
+
+  #casos-exito .pe-4 {
+    padding-right: .75rem !important;
+    margin-bottom: 0;
   }
 
   #casos-carrusel .slick-prev {
@@ -749,5 +801,10 @@ p {
 
   #mapa .logo {
     display: none;
+  }
+
+  /* anclajes mobile */
+  #about-us {
+    top: -65px;
   }
 }

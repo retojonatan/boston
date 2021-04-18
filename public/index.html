@@ -33,8 +33,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link text-white active" aria-current="page" href="#about-us">Nosotros</a>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#about-us">Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#services">Servicios</a>
@@ -43,7 +43,7 @@
             <a class="nav-link text-white" href="#partnerships">Alianzas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#nuestros-clientes">Nuestros clientes</a>
+            <a class="nav-link text-white" href="#clients">Nuestros clientes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#casos-exitos">Casos de éxito</a>
@@ -100,7 +100,8 @@
         </div>
         <div class="col-12 col-md-6 ps-0">
           <p>
-            Boston Language Consultants es una empresa dedicada a la enseñanza del inglés, español y portugués para el
+            Boston Language Consultants es una empresa dedicada a la enseñanza del inglés, español y portugués
+            exclusivamente para el
             mercado
             corporativo desde 1992.
           </p>
@@ -296,6 +297,7 @@
   </section>
 
   <section id="nuestros-clientes" class="bg-oscuro pt-5">
+    <a class="anclaje" id="clients"></a>
     <div class="container-fluid bg-white contenedor-clientes">
       <div class="titulo-clientes py-5">
         <h2 class="text-center text-azul">Nuestros clientes</h2>
@@ -497,8 +499,8 @@
             <h5 class="text-azul fw-normal">RESULTADOS:</h5>
             <p class="pe-4">
               Desde 1999, y de forma ininterrumpida, ofrecemos excelentes resultados: 97% de promoción de los
-              participantes en los exámenes, 80% de asistencia promedio al programa durante el último semestre 2020 en
-              un entorno 100% virtual.
+              participantes en los exámenes y 80% de asistencia promedio al programa frente al desafío que generó
+              abruptamente la pandemia, en un entorno 100% virtual.
             </p>
           </div>
         </div>
@@ -668,14 +670,14 @@
         <div class="text-azul titulo-contacto pb-2">
           <h2>Contacto</h2>
         </div>
-        <form id="form-contacto">
+        <form id="form-contacto" action="/send-mail" method="POST">
           <div class="form-group">
             <input type="text" id="nombreFormulario" class="form-control form-control-sm bg-claro"
-              placeholder="Nombre y Apellido" name="Nombre">
+              placeholder="Nombre y Apellido" name="nombre">
           </div>
           <div class="form-group">
             <input type="text" id="emailFormulario" class="form-control form-control-sm bg-claro" placeholder="E-mail"
-              name="Email">
+              name="email">
           </div>
           <div class="form-group">
             <input type="text" id="asuntoFormulario" class="form-control form-control-sm bg-claro" placeholder="Asunto"
@@ -683,10 +685,10 @@
           </div>
           <div class="form-group">
             <textarea id="mensajeFormulario" cols="30" rows="7" class="form-control form-control-sm bg-claro"
-              placeholder="Mensaje" name="Mensaje"></textarea>
+              placeholder="Mensaje" name="mensaje"></textarea>
           </div>
           <div class="form-group">
-            <input onclick="enviarMensaje()" type="button" class="btn btn-sm btn-boston" value="Enviar">
+            <input type="submit" class="btn btn-sm btn-boston" value="Enviar">
           </div>
         </form>
       </div>

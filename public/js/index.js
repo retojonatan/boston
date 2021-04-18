@@ -24,6 +24,12 @@ $('#alianzas-carrusel').slick({
   autoplayspeed: 3000,
   prevArrow: '<div class="slick-prev slick-arrow"><i class=" fas fa-chevron-left"></i></div>',
   nextArrow: '<div class="slick-next slick-arrow"><i class=" fas fa-chevron-right"></i></div>',
+	responsive: [{
+    breakpoint: 768,
+    settings: {
+      fade: false,
+    }
+  }],
 });
 
 $('#clientes-carrusel').slick({
@@ -40,6 +46,7 @@ $('#clientes-carrusel').slick({
     breakpoint: 478,
     settings: {
       slidesPerRow: 4,
+	  fade: false,
       rows: 4,
     }
   }]
@@ -62,20 +69,19 @@ $('#testimonios-carrusel').slick({
     breakpoint: 1600,
     settings: {
       centerPadding: '165px',
-    },
+    }
   }]
 });
 
 $('#casos-carrusel').slick({
   arrows: true,
   dots: false,
-  autoplay: true,
+  autoplay: false,
   accesibility: true,
   draggable: true,
   fade: true,
   lazyLoad: 'progressive',
   infinite: true,
-  autoplaySpeed: 4000,
   speed: 2000,
   prevArrow: '<div class="slick-prev slick-arrow"><i class=" fas fa-chevron-left"></i></div>',
   nextArrow: '<div class="slick-next slick-arrow"><i class=" fas fa-chevron-right"></i></div>',
@@ -131,3 +137,9 @@ function guardarMensaje(nombre, email, asunto, mensaje) {
   })
 }
 */
+
+$('.navbar-nav li a').on('click', function(){
+    if(!$( this ).hasClass('dropdown-toggle')){
+        $('.navbar-collapse').collapse('hide');
+    }
+});
