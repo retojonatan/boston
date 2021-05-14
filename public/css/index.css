@@ -447,7 +447,7 @@ p {
   border-radius: 6px;
 }
 
-#contacto .btn-boston {
+.btn-boston {
   background-color: #BACCDB;
   font-weight: 600;
   font-size: .8rem;
@@ -455,7 +455,7 @@ p {
   box-shadow: 0px 1px 5px #ccc;
 }
 
-#contacto .btn-boston:hover {
+.btn-boston:hover {
   background-color: #A9CAEA;
   color: #0368B6;
 }
@@ -480,6 +480,10 @@ p {
   padding: 30px;
   height: 120px;
   object-fit: scale-down;
+}
+
+.antispam {
+  display: none !important;
 }
 
 /* Mobile */

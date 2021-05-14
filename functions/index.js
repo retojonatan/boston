@@ -19,6 +19,10 @@ app.set('views', './views')
 app.set('view engine', 'hbs')
 app.use(express.json());
 
+app.listen(3000, function () {
+  console.log('Aplicación escuchando en el puerto 3000');
+});
+
 app.get('/', (req, res) => {
   res.render('index')
 });
